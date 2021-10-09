@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import type { App } from "vue";
-import { menus } from "./menu";
+import { menus } from "./menus";
 
 const routes: Array<RouteRecordRaw> = [
   {

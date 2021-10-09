@@ -1,6 +1,6 @@
 import { RouteRecordRaw } from "vue-router";
 
-export const menus = [
+export const menus: RouteRecordRaw[] = [
   {
     path: "/",
     component: () => import("~/views/Home/index.vue"),

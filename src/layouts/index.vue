@@ -1,15 +1,11 @@
 <template>
-  <el-container>
-    <el-header>
-      <Header></Header>
-    </el-header>
-    <el-main>
-      <Main></Main>
-    </el-main>
-    <el-footer>
-      <Footer></Footer>
-    </el-footer>
-  </el-container>
+  <div class="container">
+    <Header></Header>
+
+    <Main></Main>
+
+    <Footer></Footer>
+  </div>
 </template>
 
 <script lang="ts">
