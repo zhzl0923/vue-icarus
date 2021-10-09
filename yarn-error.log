@@ -1,0 +1,51 @@
+Arguments: 
+  E:\NodeJs\node.exe C:\Users\zzl\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;E:\protoc-3.17.3\bin;D:\Program Files\Xshell\;E:\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\Git\cmd;E:\NodeJs\;C:\Users\zzl\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;E:\code\go\bin;D:\Program Files\Git\bin;C:\Users\zzl\go\bin;E:\Docker\Docker\resources\bin;E:\DockerDesktop\version-bin;E:\phpEnv\php\php-7.4\;E:\phpEnv\server\mysql\mysql-5.7\bin\;E:\phpEnv\tools\Composer\;C:\Users\zzl\AppData\Roaming\Composer\vendor\bin;C:\Users\zzl\AppData\Local\Microsoft\WindowsApps;C:\Users\zzl\AppData\Roaming\npm;D:\Program Files\WebStorm 2021.2.2\bin;D:\Program Files\GoLand 2021.2.3\bin;D:\Program Files\PhpStorm 2021.2.2\bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'E:\code\vue\vue-icarus\node_modules\esbuild-windows-64\esbuild.exe'
+
+npm manifest: 
+  {
+    "name": "vue-icarus",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "vue-tsc --noEmit && vite build",
+      "serve": "vite preview"
+    },
+    "dependencies": {
+      "element-plus": "^1.1.0-beta.19",
+      "pinia": "^2.0.0-rc.10",
+      "vue": "^3.2.16",
+      "vue-router": "4"
+    },
+    "devDependencies": {
+      "@iconify/vue": "^3.0.0",
+      "@types/node": "^16.10.2",
+      "@vitejs/plugin-vue": "^1.9.2",
+      "sass": "^1.42.1",
+      "typescript": "^4.4.3",
+      "unplugin-vue-components": "^0.15.6",
+      "vite": "^2.6.0",
+      "vue-tsc": "^0.3.0"
+    },
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
