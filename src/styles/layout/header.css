@@ -2,6 +2,8 @@
   @apply flex justify-center items-center;
   @apply h-14 bg-white shadow;
   @apply sticky;
+
+  color: var(--el-menu-text-color);
 }
 
 .header > .container {
@@ -14,7 +16,7 @@
 }
 
 .header-logo:hover {
-  color: var(--primary-color);
+  color: var(--el-color-primary);
 }
 
 .header .el-menu-item {
