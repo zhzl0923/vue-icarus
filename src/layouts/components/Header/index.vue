@@ -1,42 +1,42 @@
 <template>
-  <el-menu
-    :default-active="activeIndex"
-    class="el-menu-demo"
-    mode="horizontal"
-    @select="handleSelect"
-  >
-    <el-menu-item index="1">Processing Center</el-menu-item>
-    <el-sub-menu index="2">
-      <template #title>Workspace</template>
-      <el-menu-item index="2-1">item one</el-menu-item>
-      <el-menu-item index="2-2">item two</el-menu-item>
-      <el-menu-item index="2-3">item three</el-menu-item>
-      <el-sub-menu index="2-4">
-        <template #title>item four</template>
-        <el-menu-item index="2-4-1">item one</el-menu-item>
-        <el-menu-item index="2-4-2">item two</el-menu-item>
-        <el-menu-item index="2-4-3">item three</el-menu-item>
-      </el-sub-menu>
-    </el-sub-menu>
-    <el-menu-item index="3">Info</el-menu-item>
-    <el-menu-item index="4">Orders</el-menu-item>
-  </el-menu>
+  <div class="header">
+    <avatar></avatar>
+    <el-menu
+      :default-active="route.path"
+      class="el-menu-demo"
+      mode="horizontal"
+      router
+      @select="handleSelect"
+    >
+      <menu-item :menus="menus"></menu-item>
+    </el-menu>
+    <search></search>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
+import Avatar from "./Avatar.vue";
+import Search from "./Search.vue";
+import MenuItem from "./MenuItem.vue";
+import { menus } from "~/routes/menus";
+import { useRoute } from "vue-router";
 
 export default defineComponent({
+  components: {
+    Avatar,
+    MenuItem,
+    Search,
+  },
   setup() {
-    const activeIndex = ref("1");
-    const activeIndex2 = ref("1");
+    const route = useRoute();
     const handleSelect = (key: any, keyPath: any) => {
       console.log(key, keyPath);
     };
     return {
-      activeIndex,
-      activeIndex2,
+      route,
       handleSelect,
+      menus,
     };
   },
 });

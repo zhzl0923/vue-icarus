@@ -1,29 +1,29 @@
 $--colors: (
-    "primary": (
-        "base": #1890ff,
-    ),
-    "success": (
-        "base": #52c41a,
-    ),
-    "warning": (
-        "base": #faad14,
-    ),
-    "danger": (
-        "base": #f5222d,
-    ),
-    "error": (
-        "base": #f5222d,
-    ),
-    "info": (
-        "base": #bfbfbf,
-    ),
+  "primary": (
+    "base": #1890ff,
+  ),
+  "success": (
+    "base": #52c41a,
+  ),
+  "warning": (
+    "base": #faad14,
+  ),
+  "danger": (
+    "base": #f5222d,
+  ),
+  "error": (
+    "base": #f5222d,
+  ),
+  "info": (
+    "base": #bfbfbf,
+  ),
 );
 
 // You should use them in scss, because we calculate it by sass.
 // comment next lines to use default color
 @forward "element-plus/theme-chalk/src/common/var.scss" with(
-    $colors: $--colors,
-    $button-padding-horizontal: ("default": 50px)
+  $colors: $--colors,
+  $button-padding-horizontal: ("default": 50px)
 );
 
 // if you want to import all
@@ -31,3 +31,11 @@ $--colors: (
 
 // You can comment it to hide debug info.
 // @debug $--colors;
+.el-menu--horizontal {
+  border: none;
+  height: 100%;
+}
+
+.el-menu--horizontal > .el-menu-item {
+  height: 100%;
+}

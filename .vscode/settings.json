@@ -1,0 +1,28 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "stylelint.config": {
+    "extends": ["stylelint-config-standard"],
+    "rules": {
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "tailwind",
+            "layer",
+            "apply",
+            "variants",
+            "responsive",
+            "screen",
+            "forward",
+            "@import"
+          ]
+        }
+      ]
+    }
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}

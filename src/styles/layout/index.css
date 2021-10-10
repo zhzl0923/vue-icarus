@@ -1,0 +1,4 @@
+.layout {
+  @apply flex flex-col space-y-4;
+  @apply w-screen min-h-screen;
+}
