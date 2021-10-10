@@ -12,3 +12,11 @@
 .header-logo {
   @apply mr-4;
 }
+
+.header-logo:hover {
+  color: var(--primary-color);
+}
+
+.header .el-menu-item {
+  @apply flex  space-x-1;
+}

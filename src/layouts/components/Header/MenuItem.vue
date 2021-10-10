@@ -6,10 +6,18 @@
       :index="menu.path"
       :route="menu"
     >
-      {{ menu.meta.title }}
+      <Icon :icon="menu.meta.icon" />
+      <span>
+        {{ menu.meta.title }}
+      </span>
     </el-menu-item>
     <el-sub-menu v-else :index="menu.path" :key="menu.path">
-      <template #title>{{ menu.meta.title }}</template>
+      <template #title>
+        <Icon :icon="menu.meta.icon" />
+        <span>
+          {{ menu.meta.title }}
+        </span>
+      </template>
       <menu-item :menus="menu.children"></menu-item>
     </el-sub-menu>
   </template>
@@ -18,6 +26,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 import { RouteRecordRaw } from "vue-router";
+import { Icon } from "@iconify/vue";
 
 export default defineComponent({
   props: {
@@ -29,6 +38,9 @@ export default defineComponent({
       type: String,
       default: "",
     },
+  },
+  components: {
+    Icon,
   },
   setup() {},
 });

@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --danger-color: #f5222d;
+  --error-color: #f5222d;
+  --info-color: #bfbfbf;
+}
+
 body {
   @apply h-screen w-screen;
   @apply bg-gray-100;
+
+  color: #4a4a4a;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
 }
