@@ -2,5 +2,13 @@
   @apply flex justify-center items-center;
   @apply h-14 bg-white shadow;
   @apply sticky;
-  @apply space-x-6;
+}
+
+.header > .container {
+  @apply flex  items-center;
+  @apply 2xl:max-w-6xl;
+}
+
+.header-logo {
+  @apply mr-4;
 }

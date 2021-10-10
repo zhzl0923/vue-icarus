@@ -1,16 +1,18 @@
 <template>
   <div class="header">
-    <avatar></avatar>
-    <el-menu
-      :default-active="route.path"
-      class="el-menu-demo"
-      mode="horizontal"
-      router
-      @select="handleSelect"
-    >
-      <menu-item :menus="menus"></menu-item>
-    </el-menu>
-    <search></search>
+    <div class="container">
+      <avatar></avatar>
+      <el-menu
+        :default-active="route.path"
+        class="el-menu-demo"
+        mode="horizontal"
+        router
+        @select="handleSelect"
+      >
+        <menu-item :menus="menus"></menu-item>
+      </el-menu>
+      <search></search>
+    </div>
   </div>
 </template>
 
