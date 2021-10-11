@@ -14,7 +14,7 @@ export const menus: RouteRecordRaw[] = [
   {
     path: "/tags",
     component: () => import("~/views/Tags/index.vue"),
-    meta: { title: "标签", icon: "fa-solid:tags" },
+    meta: { title: "标签", icon: "fa-solid:tag" },
   },
   {
     path: "/archive",

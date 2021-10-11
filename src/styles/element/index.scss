@@ -31,11 +31,15 @@ $--colors: (
 
 // You can comment it to hide debug info.
 // @debug $--colors;
-.el-menu--horizontal {
+.el-menu {
   border: none;
   height: 100%;
 }
 
-.el-menu--horizontal > .el-menu-item {
+.el-menu > .el-menu-item {
   height: 100%;
 }
+
+// .el-menu-item.is-active {
+//   box-sizing: border-box;
+// }

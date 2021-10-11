@@ -1,18 +1,19 @@
 .header {
   @apply flex justify-center items-center;
   @apply h-14 bg-white shadow;
-  @apply sticky;
-
-  color: var(--el-menu-text-color);
+  @apply sticky  box-border;
 }
 
 .header > .container {
   @apply flex  items-center;
-  @apply 2xl:max-w-6xl;
+  @apply max-w-5xl !important;
+
+  height: 100%;
 }
 
 .header-logo {
-  @apply mr-4;
+  @apply mr-6;
+  @apply text-lg;
 }
 
 .header-logo:hover {
@@ -20,5 +21,13 @@
 }
 
 .header .el-menu-item {
-  @apply flex  space-x-1;
+  @apply flex  space-x-2;
+}
+
+.header .el-menu {
+  @apply justify-start mr-auto;
+}
+
+.header-button {
+  @apply justify-end ml-auto mr-8;
 }
