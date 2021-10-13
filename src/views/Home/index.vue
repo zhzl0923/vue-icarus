@@ -1,20 +1,23 @@
 <template>
-  <div>
-    <el-button type="primary">{{ message }}</el-button>
-    <el-button type="info">{{ message }}</el-button>
-    <el-button type="success">{{ message }}</el-button>
-    <el-button type="warning">{{ message }}</el-button>
-    <el-button type="danger">{{ message }}</el-button>
-  </div>
+  <n-space>
+    <n-button>Default</n-button>
+    <n-button type="primary">Primary</n-button>
+    <n-button type="info">Info</n-button>
+    <n-button type="success">Success</n-button>
+    <n-button type="warning">Warning</n-button>
+    <n-button type="error">Error</n-button>
+  </n-space>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { NSpace, NButton } from "naive-ui";
 
 export default defineComponent({
-  setup() {
-    const message = "Hello World!";
-    return { message };
+  components: {
+    NSpace,
+    NButton,
   },
+  setup() {},
 });
 </script>

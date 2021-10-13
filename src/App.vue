@@ -1,16 +1,35 @@
 <template>
-  <el-config-provider :locale="locale">
+  <NConfigProvider :theme-overrides="themeOverrides">
     <router-view></router-view>
-  </el-config-provider>
+  </NConfigProvider>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import zhCn from "element-plus/lib/locale/lang/zh-cn";
-
+import { NConfigProvider } from "naive-ui";
+/**
+ * @type import('naive-ui').GlobalThemeOverrides
+ */
+const themeOverrides = {
+  common: {
+    primaryColor: "#2080f0",
+    primaryColorHover: "#4098fc",
+    primaryColorPressed: "#1060c9",
+    primaryColorSuppl: "#4098fc",
+    infoColor: "#595959",
+    infoColorHover: "#8c8c8c",
+    infoColorPressed: "#8c8c8c",
+    infoColorSuppl: "#595959",
+  },
+};
 export default defineComponent({
+  components: {
+    NConfigProvider,
+  },
   setup() {
-    return { locale: zhCn };
+    return {
+      themeOverrides,
+    };
   },
 });
 </script>

@@ -21,3 +21,7 @@ body {
     'Segoe UI Symbol',
     'Noto Color Emoji';
 }
+
+* {
+  outline: none !important;
+}

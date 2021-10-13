@@ -2,16 +2,7 @@
   <div class="header">
     <avatar></avatar>
     <div class="container">
-      <el-menu
-        :default-active="route.path"
-        class="el-menu-demo"
-        mode="horizontal"
-        router
-        @select="handleSelect"
-      >
-        <menu-item v-for="menu in menus" :key="menu.path" :menu="menu">
-        </menu-item>
-      </el-menu>
+      <menus></menus>
       <hearder-button></hearder-button>
     </div>
   </div>
@@ -20,27 +11,17 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Avatar from "./Avatar.vue";
-import HearderButton from "./HeaderButton.vue";
-import MenuItem from "./MenuItem.vue";
-import { menus } from "~/routes/menus";
-import { useRoute } from "vue-router";
+import HearderButton from "./Buttons.vue";
+import Menus from "./Menus.vue";
 
 export default defineComponent({
   components: {
     Avatar,
-    MenuItem,
     HearderButton,
+    Menus,
   },
   setup() {
-    const route = useRoute();
-    const handleSelect = (key: any, keyPath: any) => {
-      // console.log(key, keyPath);
-    };
-    return {
-      route,
-      handleSelect,
-      menus,
-    };
+    return {};
   },
 });
 </script>
