@@ -6,7 +6,7 @@
 
 .header > .container {
   @apply flex  items-center;
-  @apply max-w-5xl !important;
+  @apply max-w-6xl !important;
 
   height: 100%;
 }
@@ -17,7 +17,7 @@
 }
 
 .header-logo:hover {
-  color: var(--el-color-primary);
+  color: #2080f0;
 }
 
 .header .n-menu-item-content__icon {

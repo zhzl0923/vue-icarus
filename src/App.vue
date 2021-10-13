@@ -16,10 +16,16 @@ const themeOverrides = {
     primaryColorHover: "#4098fc",
     primaryColorPressed: "#1060c9",
     primaryColorSuppl: "#4098fc",
-    infoColor: "#595959",
+    infoColor: "#C0C4CC",
     infoColorHover: "#8c8c8c",
     infoColorPressed: "#8c8c8c",
-    infoColorSuppl: "#595959",
+    infoColorSuppl: "#C0C4CC",
+    fontWeightStrong: "400",
+    textColorBase: "#4a4a4a",
+  },
+  Menu: {
+    itemTextColor: "#4a4a4a",
+    itemIconColor: "#4a4a4a",
   },
 };
 export default defineComponent({

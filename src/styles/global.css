@@ -5,8 +5,8 @@
 body {
   @apply h-screen w-screen;
 
-  font-size: var(--el-font-size-base);
-  background-color: var(--el-background-color-base);
+  background-color: #f7f7f7;
+  color: #4a4a4a;
   font-family:
     -apple-system,
     BlinkMacSystemFont,

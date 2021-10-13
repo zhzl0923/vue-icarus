@@ -4,8 +4,6 @@ import { Icon } from "~/components/Icon";
 import { h } from "vue";
 
 export const renderIcon = (icon: string) => {
-  console.log(icon);
-
   return () => h(Icon, { icon: icon });
 };
 
