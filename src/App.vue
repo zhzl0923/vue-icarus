@@ -1,7 +1,7 @@
 <template>
-  <NConfigProvider :theme-overrides="themeOverrides">
+  <n-config-provider :theme-overrides="themeOverrides">
     <router-view></router-view>
-  </NConfigProvider>
+  </n-config-provider>
 </template>
 
 <script lang="ts">
