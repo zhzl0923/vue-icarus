@@ -28,3 +28,19 @@
 .header-button {
   @apply justify-end ml-auto mr-8;
 }
+
+@media (max-width: 640px) {
+  .header-search-modal {
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  .header-search-modal {
+    width: 600px;
+    position: absolute;
+    left: calc(50% - 300px);
+    top: 100px;
+  }
+}

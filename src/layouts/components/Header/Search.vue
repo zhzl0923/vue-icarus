@@ -3,14 +3,9 @@
     <Icon icon="search"></Icon>
   </button>
   <n-modal
+    class="header-search-modal"
     v-model:show="showModal"
     preset="card"
-    :style="{
-      width: '600px',
-      position: 'absolute',
-      left: 'calc(50% - 300px)',
-      top: '100px',
-    }"
     size="huge"
     :bordered="false"
   >
