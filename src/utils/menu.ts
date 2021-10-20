@@ -21,12 +21,21 @@ export const convertMenusToMenuOption = (
       children = convertMenusToMenuOption(menu.children);
     }
     const iconName: string = menu.meta ? menu.meta.icon : "";
-    menuOptions.push({
-      key: menu.path,
-      label: renderRouterLink(menu.name ? menu.name : "", menu.path),
-      icon: renderIcon(iconName),
-      children: children,
-    });
+    if ( children.length > 0) {
+      menuOptions.push({
+        key: menu.path,
+        label: renderRouterLink(menu.name ? menu.name : "", menu.path),
+        icon: renderIcon(iconName),
+        children: children,
+      });
+    } else {
+      menuOptions.push({
+        key: menu.path,
+        label: renderRouterLink(menu.name ? menu.name : "", menu.path),
+        icon: renderIcon(iconName)
+      });
+    }
+    
   }
   return menuOptions;
 };
