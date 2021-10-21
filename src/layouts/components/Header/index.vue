@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <n-drawer v-model:show="active" width="60%" placement="left">
+    <n-drawer v-model:show="active" width="55%" placement="left">
       <n-drawer-content>
         <sidebar :options="options"></sidebar>
       </n-drawer-content>

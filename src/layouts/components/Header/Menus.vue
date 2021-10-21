@@ -1,5 +1,5 @@
 <template>
-  <n-menu v-model:value="route.path" mode="horizontal" :options="options" />
+  <n-menu :value="route.path" mode="horizontal" :options="options" />
 </template>
 
 <script lang="ts">
