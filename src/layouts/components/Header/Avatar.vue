@@ -1,6 +1,6 @@
 <template>
   <div class="header-logo">
-    <a href="/">ZLXY</a>
+    <a href="/">ZZL</a>
   </div>
 </template>
 

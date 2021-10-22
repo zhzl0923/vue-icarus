@@ -2,21 +2,21 @@
   <div class="header">
     <avatar></avatar>
     <div class="container">
-      <div class="sm:block hidden">
+      <div class="header-menu">
         <menus :options="options"></menus>
       </div>
       <div class="header-button">
         <search />
-        <div class="sm:hidden block">
+        <div class="header-bars">
           <n-button @click="handleBarClick">
             <Icon icon="Bars"></Icon>
           </n-button>
         </div>
       </div>
     </div>
-    <n-drawer v-model:show="active" width="55%" placement="left">
+    <n-drawer v-model:show="active" width="60%" placement="left">
       <n-drawer-content>
-        <sidebar :options="options"></sidebar>
+        <side :options="options"></side>
       </n-drawer-content>
     </n-drawer>
   </div>
@@ -31,14 +31,14 @@ import { convertMenusToMenuOption } from "~/utils/menu";
 import Avatar from "./Avatar.vue";
 import Search from "./Search.vue";
 import Menus from "./Menus.vue";
-import Sidebar from "./Sidebar.vue";
+import Side from "./Side.vue";
 
 export default defineComponent({
   components: {
     Avatar,
     Search,
     Menus,
-    Sidebar,
+    Side,
     Icon,
     NButton,
     NDrawer,

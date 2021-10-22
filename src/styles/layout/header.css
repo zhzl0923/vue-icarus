@@ -44,3 +44,11 @@
     top: 100px;
   }
 }
+
+.header-menu {
+  @apply sm:block hidden;
+}
+
+.header-bars {
+  @apply sm:hidden block;
+}
