@@ -27,8 +27,8 @@ export const menus: RouteRecordRaw[] = [
   },
   {
     name: "友链",
-    path: "/friends",
-    component: () => import("~/views/Friends/index.vue"),
-    meta: { icon: "UserFriends" },
+    path: "/Links",
+    component: () => import("~/views/Links/index.vue"),
+    meta: { icon: "Link" },
   },
 ];

@@ -14,7 +14,12 @@
         </div>
       </div>
     </div>
-    <n-drawer v-model:show="active" width="60%" placement="left">
+    <n-drawer
+      class="header-drawer"
+      v-model:show="active"
+      width="60%"
+      placement="left"
+    >
       <n-drawer-content>
         <side :options="options"></side>
       </n-drawer-content>
@@ -49,6 +54,12 @@ export default defineComponent({
     const active = ref(false);
     const handleBarClick = () => {
       active.value = !active.value;
+    };
+    window.onresize = () => {
+      const width = document.body.clientWidth;
+      if (width >= 640) {
+        active.value = false;
+      }
     };
     return {
       options,
