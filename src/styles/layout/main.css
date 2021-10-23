@@ -1,3 +1,44 @@
 .main {
-  @apply pl-5 pr-5 pt-2 pb-2;
+  @apply flex pl-5 pr-5 pt-2 pb-2;
+}
+
+.main .main-left {
+  @apply space-y-4 m-2;
+}
+
+.main .site-card {
+  @apply shadow-md hover:shadow-2xl;
+  @apply w-full sm:w-72;
+}
+
+.main .site-card-avatar {
+  @apply flex justify-center;
+}
+
+.main .site-card-avatar > .n-avatar {
+  border: 1px solid #f2f2f2;
+}
+
+.main .site-card-info {
+  @apply table table-fixed w-full text-center mt-8 mb-8 leading-loose;
+}
+
+.main .site-card-social {
+  @apply flex w-full text-2xl justify-center mt-4 space-x-2;
+}
+
+.notice-animate {
+  color: red;
+  animation: notice-animation 0.8s linear infinite;
+}
+
+@keyframes notice-animation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
 }

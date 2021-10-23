@@ -1,17 +1,25 @@
 <template>
   <div class="main">
-    <site-info></site-info>
-    <router-view></router-view>
+    <div class="main-left">
+      <site-card></site-card>
+      <notice></notice>
+    </div>
+    <div class="main-content">
+      <router-view></router-view>
+    </div>
+    <div class="main-right"></div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import SiteInfo from "./SiteInfo.vue";
+import SiteCard from "./SiteCard.vue";
+import Notice from "./Notice.vue";
 
 export default defineComponent({
   components: {
-    SiteInfo,
+    SiteCard,
+    Notice,
   },
   setup() {},
 });

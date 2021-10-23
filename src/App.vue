@@ -21,11 +21,11 @@ const themeOverrides = {
     infoColorPressed: "#8c8c8c",
     infoColorSuppl: "#C0C4CC",
     fontWeightStrong: "400",
-    textColorBase: "#4a4a4a",
+    textColorBase: "#4c4948",
   },
   Menu: {
-    itemTextColor: "#4a4a4a",
-    itemIconColor: "#4a4a4a",
+    itemTextColor: "#4c4948",
+    itemIconColor: "#4c4948",
   },
 };
 export default defineComponent({

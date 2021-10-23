@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --card-box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0.06);
+  --card-hover-box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0.15);
+}
+
 body {
   @apply h-screen w-screen;
 
   background-color: #fff;
-  color: #4a4a4a;
+  color: #4c4948;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -24,4 +29,20 @@ body {
 
 * {
   outline: none !important;
+}
+
+.rotate {
+  transition: all 0.5s;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+}
+
+.card-widget {
+  box-shadow: var(--card-box-shadow);
+}
+
+.card-widget:hover {
+  box-shadow: var(--card-hover-box-shadow);
 }
