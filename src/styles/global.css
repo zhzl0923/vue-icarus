@@ -5,7 +5,7 @@
 body {
   @apply h-screen w-screen;
 
-  background-color: #f7f7f7;
+  background-color: #fff;
   color: #4a4a4a;
   font-family:
     -apple-system,

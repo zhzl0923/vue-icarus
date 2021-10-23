@@ -1,6 +1,6 @@
 .header {
   @apply flex justify-center items-center;
-  @apply h-14 bg-white shadow;
+  @apply h-14 bg-white shadow-md;
   @apply sticky  box-border;
 }
 
