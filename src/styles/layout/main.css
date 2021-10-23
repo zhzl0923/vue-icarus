@@ -1,9 +1,9 @@
 .main {
-  @apply flex pl-5 pr-5 pt-2 pb-2;
+  @apply flex pl-5 pr-5 pt-2 pb-2 justify-center space-x-8;
 }
 
 .main .main-left {
-  @apply space-y-4 m-2;
+  @apply space-y-4;
 }
 
 .main .site-card {

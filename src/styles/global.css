@@ -46,3 +46,7 @@ body {
 .card-widget:hover {
   box-shadow: var(--card-hover-box-shadow);
 }
+
+.n-layout {
+  background: none;
+}

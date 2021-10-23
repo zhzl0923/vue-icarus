@@ -7,9 +7,7 @@
       </div>
     </template>
     <template #default>
-      <span>
-        努力应该是一种习惯，而不是一时兴起，这样将来你才可以有底气说，得到的从来都不是侥幸。
-      </span>
+      <span> 努力应该是一种习惯，而不是一时兴起，得到的从来都不是侥幸。 </span>
     </template>
   </n-card>
 </template>

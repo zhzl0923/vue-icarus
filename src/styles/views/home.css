@@ -1,0 +1,17 @@
+.article-divider {
+  @apply mt-2 mb-3 !important;
+}
+
+.article-meta {
+  @apply flex items-center text-xs;
+
+  color: var(--close-color);
+}
+
+.article-meta-item {
+  @apply flex items-center space-x-1;
+}
+
+.article-date {
+  @apply flex items-center space-x-2 text-xs;
+}
