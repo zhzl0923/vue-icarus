@@ -4,8 +4,10 @@
       <Header></Header>
     </n-layout-header>
     <n-layout-content
+      position="absolute"
+      style="top: 60px"
+      content-style="padding: 24px;"
       :native-scrollbar="false"
-      content-style="margin-top:20px;"
     >
       <Main></Main>
     </n-layout-content>

@@ -1,7 +1,14 @@
 .header {
   @apply flex justify-center items-center;
   @apply h-14 bg-white shadow-md;
-  @apply sticky  box-border;
+}
+
+.n-layout-header {
+  @apply sticky  box-border top-0 z-10;
+}
+
+.n-layout .n-layout-scroll-container {
+  @apply w-screen h-screen;
 }
 
 .header > .container {
