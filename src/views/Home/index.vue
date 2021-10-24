@@ -1,5 +1,5 @@
 <template>
-  <n-grid :x-gap="12" :y-gap="8" cols="3 s:1 m:2" responsive="screen">
+  <n-grid :x-gap="12" :y-gap="8" cols="3 s:1 m:3" responsive="screen">
     <n-grid-item v-for="value in list" :key="value">
       <n-card class="site-card w-96">
         <template #cover>
