@@ -13,7 +13,7 @@
   </div>
   <n-divider />
   <div>
-    <n-menu :value="route.path" :options="options" />
+    <n-menu :value="route.path" :options="options" :icon-size="14" />
   </div>
 </template>
 

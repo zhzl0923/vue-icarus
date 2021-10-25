@@ -1,5 +1,10 @@
 <template>
-  <n-menu :value="route.path" mode="horizontal" :options="options" />
+  <n-menu
+    :value="route.path"
+    mode="horizontal"
+    :options="options"
+    :icon-size="14"
+  />
 </template>
 
 <script lang="ts">

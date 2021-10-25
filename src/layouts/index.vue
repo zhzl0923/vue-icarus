@@ -6,7 +6,6 @@
     <n-layout-content
       position="absolute"
       style="top: 60px"
-      content-style="padding: 24px;"
       :native-scrollbar="false"
     >
       <Main></Main>

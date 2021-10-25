@@ -27,11 +27,6 @@
   color: #2080f0;
 }
 
-.n-menu-item-content__icon {
-  margin-right: 0 !important;
-  font-size: 14px !important;
-}
-
 .header-button {
   @apply flex justify-end ml-auto mr-8 space-x-4;
 }
