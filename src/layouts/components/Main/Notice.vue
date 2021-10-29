@@ -1,8 +1,8 @@
 <template>
   <n-card class="site-card">
     <template #header>
-      <div class="space-x-2">
-        <Icon icon="Bullhorn" class="notice-animate" />
+      <div class="aside-list-title">
+        <span><icon icon="Bullhorn" class="notice-animate" /></span>
         <span>公告</span>
       </div>
     </template>

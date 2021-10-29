@@ -43,3 +43,23 @@
     transform: scale(1.2);
   }
 }
+
+.aside-list-title {
+  @apply space-x-2 items-center flex ;
+  font-size: 16px;
+  color: #4c4948;;
+}
+
+.aside-list-item {
+  @apply flex space-x-2 items-center;
+}
+
+.aside-list-item-img {
+  @apply w-12 h-12 border;
+}
+
+.aside-list-item-content{
+  @apply text-gray-500;
+
+  font-size: 12px;
+}

@@ -1,12 +1,12 @@
 <template>
-  <icon-utils>
+  <n-icon>
     <component :is="icon"></component>
-  </icon-utils>
+  </n-icon>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { Icon as IconUtils } from "@vicons/utils";
+import {NIcon} from "naive-ui";
 import * as FaIcon from "@vicons/fa";
 
 export default defineComponent({
@@ -17,9 +17,9 @@ export default defineComponent({
     },
   },
   components: {
-    IconUtils,
+    NIcon,
     ...FaIcon,
   },
-  setup(props) {},
+  setup() {},
 });
 </script>
