@@ -50,3 +50,7 @@ body {
 .n-layout {
   background: none;
 }
+
+.n-card{
+  @apply shadow-md hover:shadow-2xl;
+}

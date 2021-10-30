@@ -8,7 +8,6 @@
 }
 
 .main .site-card {
-  @apply shadow-md hover:shadow-2xl;
   @apply w-full sm:w-72;
 }
 
@@ -62,4 +61,8 @@
   @apply text-gray-500;
 
   font-size: 12px;
+}
+
+.main-content{
+  width: 58rem;
 }
