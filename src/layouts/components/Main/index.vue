@@ -9,7 +9,6 @@
     <div class="main-content">
       <router-view></router-view>
     </div>
-    <div class="main-right"></div>
   </div>
 </template>
 

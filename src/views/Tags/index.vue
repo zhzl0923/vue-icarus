@@ -8,7 +8,7 @@
       </div>
     </template>
     <template #default>
-      <div ref="wordCloud" id="wordCloud"  style="width: 300px;height: 500px" class="wordCloud"/>
+      <div ref="wordCloud" id="wordCloud"  class="tags-word-cloud"/>
     </template>
   </n-card>
 </template>
@@ -37,6 +37,13 @@ export default defineComponent({
         Math.round(Math.random() * 160)
       ].join(',') + ')';
     };
+    const color = [
+        'rgb(255, 208, 119)',
+        'rgb(59, 196, 199)',
+        'rgb(58, 158, 234)',
+        'rgb(255, 78, 105)',
+        'rgb(70, 30, 71)'
+    ];
     onMounted(() => {
       // 获取节点
       const myChart = echarts.init(
@@ -47,21 +54,37 @@ export default defineComponent({
           backgroundColor: '',
           borderColor: 'red',
           textStyle: {
-            color: '#fff',
+            color: '#333',
           },
         },
         series: [{
           type: 'wordCloud',
           gridSize: 10, // 字之间的间隔大小
-          // sizeRange: [12, 50], // 最小字体和最大字体
-          sizeRange: [14, 14], // 最小字体和最大字体 必须写一个范围不能直接写sizeRange: 14，
+          sizeRange: [12, 50], // 最小字体和最大字体
+          // sizeRange: [14, 14], // 最小字体和最大字体 必须写一个范围不能直接写sizeRange: 14，
           rotationRange: [0, 0], // 字体旋转角度的范围，这里水平
-          shape: 'smooth', // 形状
-          width: 400,
-          height: 150,
+          shape: 'circle', // 形状
+          width: '100%',
+          height: '100%',
           drawOutOfBound: false, // 字是否叠加
           textStyle: {
-            color: '#FFF',
+            normal: {
+              fontFamily: 'sans-serif',
+              fontWeight: 'bold',
+              // Color can be a callback function or a color string
+              color: function () {
+                // Random color
+                return 'rgb(' + [
+                  Math.round(Math.random() * 256),
+                  Math.round(Math.random() * 256),
+                  Math.round(Math.random() * 256)
+                ].join(',') + ')';
+              }
+            },
+            emphasis: {
+              shadowBlur: 2,
+              shadowColor: '#000'
+            }
           },
           emphasis: { // 字高亮时显示的效果
             textStyle: {
@@ -71,68 +94,20 @@ export default defineComponent({
           },
           data: [
             {
-              name: 'Sam S Club',
+              name: '标签一',
               value: 10000,
-              textStyle: {
-                color: 'black',
-                lineHeight: 24,
-                borderRadius: 10,
-                width: 100,
-              },
-              // 鼠标放上的效果
-              emphasis: {
-                textStyle: {
-                  color: 'red',
-                },
-              },
             },
             {
-              name: '危险废物企业1',
+              name: '标签二',
               value: 61810,
-              textStyle: {
-                color: 'black',
-                lineHeight: 24,
-                borderRadius: 10,
-                width: 100,
-              },
-              // 鼠标放上的效果
-              emphasis: {
-                textStyle: {
-                  color: 'red',
-                },
-              },
             },
             {
-              name: '医疗机构',
+              name: '标签三',
               value: 4386,
-              textStyle: {
-                color: 'black',
-                lineHeight: 24,
-                borderRadius: 10,
-                width: 100,
-              },
-              // 鼠标放上的效果
-              emphasis: {
-                textStyle: {
-                  color: 'red',
-                },
-              },
             },
             {
-              name: '干洗店',
+              name: '标签四',
               value: 4055,
-              textStyle: {
-                color: 'black',
-                lineHeight: 24,
-                borderRadius: 10,
-                width: 100,
-              },
-              // 鼠标放上的效果
-              emphasis: {
-                textStyle: {
-                  color: 'red',
-                },
-              },
             },
           ],
         }],

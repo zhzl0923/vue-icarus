@@ -1,68 +1,75 @@
 .main {
-  @apply flex justify-center space-x-8 h-screen mt-10;
+    @apply flex md:justify-center h-screen mt-10;
+    @apply flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0;
+    @apply md:ml-0 md:mr-0 ml-4 mr-4;
 }
 
 .main .main-left {
-  @apply space-y-4 ;
-  @apply sticky top-28 z-10;
+    @apply space-y-4  order-2 md:order-1 md:mt-0 mt-4;
 }
 
 .main .site-card {
-  @apply w-full sm:w-72;
+    @apply w-full md:w-72;
 }
 
 .main .site-card-avatar {
-  @apply flex justify-center;
+    @apply flex justify-center;
 }
 
 .main .site-card-avatar > .n-avatar {
-  border: 1px solid #f2f2f2;
+    border: 1px solid #f2f2f2;
 }
 
 .main .site-card-info {
-  @apply table table-fixed w-full text-center mt-8 mb-8 leading-loose;
+    @apply table table-fixed w-full text-center mt-8 mb-8 leading-loose;
 }
 
 .main .site-card-social {
-  @apply flex w-full text-2xl justify-center mt-4 space-x-2;
+    @apply flex w-full text-2xl justify-center mt-4 space-x-2;
 }
 
 .notice-animate {
-  color: red;
-  animation: notice-animation 0.8s linear infinite;
+    color: red;
+    animation: notice-animation 0.8s linear infinite;
 }
 
 @keyframes notice-animation {
-  0%,
-  100% {
-    transform: scale(1);
-  }
+    0%,
+    100% {
+        transform: scale(1);
+    }
 
-  50% {
-    transform: scale(1.2);
-  }
+    50% {
+        transform: scale(1.2);
+    }
 }
 
 .aside-list-title {
-  @apply space-x-2 items-center flex ;
-  font-size: 16px;
-  color: #4c4948;;
+    @apply space-x-2 items-center flex ;
+    font-size: 16px;
+    color: #4c4948;;
 }
 
 .aside-list-item {
-  @apply flex space-x-2 items-center;
+    @apply flex space-x-2 items-center;
 }
 
 .aside-list-item-img {
-  @apply w-12 h-12 border;
+    @apply w-12 h-12 border;
 }
 
-.aside-list-item-content{
-  @apply text-gray-500;
+.aside-list-item-content {
+    @apply text-gray-500;
 
-  font-size: 12px;
+    font-size: 12px;
 }
 
-.main-content{
-  width: 58rem;
+.main-content {
+    @apply order-1 md:order-2 w-full;
+
+}
+@media (min-width: 768px) {
+    .main-content{
+        width: 58rem;
+    }
 }
